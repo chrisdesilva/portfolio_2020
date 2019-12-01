@@ -1,5 +1,5 @@
 html {
-  font-size: calc(1em + .33vw);
+  font-size: calc(1rem + 1vw);
   color: #2F1E2F;
 }
 
@@ -42,8 +42,8 @@ body {
     transform: scale(1);
   }
 
-  25% {
-    transform: scale(1.2);
+  50% {
+    transform: scale(1.5);
     color: orange;
   }
 
@@ -76,7 +76,7 @@ body {
   cursor: pointer;
   color: white;
   animation: 500ms ease-in-out .5s 2 bounce;
-  font-size: 1.5em;
+  font-size: 1.5rem;
 }
 
 .banner__content {
@@ -94,7 +94,7 @@ body {
   cursor: pointer;
   animation: 1s ease-in 3s 2 grow;
   transform: scale(1);
-  margin-top: .5em;
+  margin-top: .5rem;
   color: orange
 }
 
@@ -114,7 +114,7 @@ body {
   align-items: center;
   transition: all 750ms ease-in-out;
   border-bottom: 8px solid #2F1E2F;
-  border-radius: 0 0 0 5em;
+  border-radius: 0 0 0 5rem;
 }
 
 .bio p {
@@ -124,8 +124,9 @@ body {
 #showProjects {
   transition: all 300ms;
   cursor: pointer;
-  animation: 3s ease-in infinite grow;
+  animation: 2s ease-in infinite grow;
   color: orange;
+  margin-top: 2rem;
 }
 
 #shape--1 {
@@ -156,64 +157,137 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 5em 1em;
-  margin: 2em 2em 0 0;
+  padding: 5rem 1rem;
+  margin: 2rem 2rem 0 0;
   background: linear-gradient(#4A272D, rgb(112, 78, 74));
   color: #f7f7f7;
   position: relative;
-  border-top-right-radius: 4em;
-  border-bottom-right-radius: 4em;
+  border-top-right-radius: 4rem;
+  border-bottom-right-radius: 4rem;
+  opacity: 0;
+  transform: translateX(-5%);
+  transition: all 300ms;
 }
 
 .experienceList {
   display: flex;
   align-items: center;
-  margin-top: 1em;
+  margin-top: 1rem;
+  z-index: 10;
 }
 
 .experienceList p {
   margin-bottom: 0;
-  margin-left: .5em;
+  margin-left: .5rem;
 }
 
 .experienceList a {
-  font-size: 1em;
+  font-size: 1rem;
+}
+
+.tent {
+  z-index: 0;
 }
 
 #tent-1 {
   position: absolute;
-  bottom: 0;
-  left: 3%;
+  bottom: 1%;
+  left: 5%;
   width: 0;
   transform: rotate(180deg);
-  z-index: 10;
-  border-top: 5em solid #4F7A82;
-  border-left: 5em solid transparent;
-  border-right: 5em solid transparent;
+  border-top: 5rem solid #4F7A82;
+  border-left: 5rem solid transparent;
+  border-right: 5rem solid transparent;
+  z-index: 9;
 }
 
 #tent-2 {
   position: absolute;
   bottom: 5%;
-  left: 10%;
+  left: 3%;
   width: 0;
   transform: rotate(180deg);
-  z-index: 10;
-  border-top: 4em solid #4F7A82;
-  border-left: 4em solid transparent;
-  border-right: 4em solid transparent;
+  border-top: 4rem solid #E13700;
+  border-left: 4rem solid transparent;
+  border-right: 4rem solid transparent;
+  z-index: 8;
 }
 
 #tent-3 {
   position: absolute;
-  bottom: 15%;
-  left: 2%;
+  bottom: 9%;
+  left: 14%;
   width: 0;
   transform: rotate(180deg);
+  border-top: 3rem solid #4F7A82;
+  border-left: 3rem solid transparent;
+  border-right: 3rem solid transparent;
+}
+
+#tent-4 {
+  position: absolute;
+  top: 1%;
+  right: 8%;
+  width: 0;
+  transform: rotate(180deg);
+  border-top: 5rem solid #4F7A82;
+  border-left: 5rem solid transparent;
+  border-right: 5rem solid transparent;
+}
+
+#tent-5 {
+  position: absolute;
+  top: 5%;
+  right: 18%;
+  width: 0;
+  transform: rotate(180deg);
+  border-top: 4rem solid #E13700;
+  border-left: 4rem solid transparent;
+  border-right: 4rem solid transparent;
+}
+
+#tent-6 {
+  position: absolute;
+  top: 10%;
+  right: 3%;
+  width: 0;
+  transform: rotate(180deg);
+  border-top: 3rem solid #4F7A82;
+  border-left: 3rem solid transparent;
+  border-right: 3rem solid transparent;
+}
+
+.resume {
+  margin-top: 2rem;
+  font-family: 'Oswald', sans-serif;
+  padding: .25rem 1rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  background: #f7f7f7;
+  color: #2F1E2F;
   z-index: 10;
-  border-top: 3em solid #4F7A82;
-  border-left: 3em solid transparent;
-  border-right: 3em solid transparent;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem .25rem;
+  font-size: .9rem;
+}
+
+.contact {
+  margin-bottom: 1rem;;
+}
+
+.contact a:not(:last-child) {
+  margin-right: 2rem;
+}
+
+@media screen and (max-width: 700px) {
+  .tent {
+    display: none;
+  }
 }
 
 
@@ -245,10 +319,10 @@ p {
   opacity: 1;
   height: auto;
   transform: translateY(0);
+  transform: translateX(0);
 }
 
 a {
   text-decoration: none;
   color: inherit;
-  font-size: .6em;
 }
