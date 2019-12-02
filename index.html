@@ -19,12 +19,15 @@
       <main>
         <section class="banner__content">
             <h1>Hey. I'm Chris DeSilva.</h1>
-            <i id="moreInfo" class="fas fa-fire"></i>
+            <p id="boltDirections">Drag the bolt to the fire pit and help me light this fire. <i id="bolt" class="fas fa-bolt" draggable="true" ondragstart="grabBolt(event)"></i></p>
+            <i id="fire" class="fas fa-fire" draggable="true"></i>
+            <i id="fireRing" class="fas fa-crop-alt" ondragover="dragBolt(event)" ondrop="startFire(event)"></i>
         </section>
         <section class="bio">
           <p>I'm a developer, musician, and outdoors enthusiast currently based out of Austin, Texas. I love working on the front end, usually with React, and am comfortable diving into the back end with Node. Two crazy dogs serve as my rubber ducks.</p>
           <p>I learn by doing and am passionate about compassionate cross-functional collaboration. Helping others grow and sharpening my skills while working on a team is a great source of joy.</p>
-          <i id="showProjects" class="fas fa-fish"></i>
+          <p>Catch the fish to see some of my projects.</p>
+          <i id="fish" class="fas fa-fish"></i>
           <div id="shape--1"></div>
           <div id="shape--2"></div>
         </section>
@@ -88,5 +91,6 @@
       </footer>
     </div>
     <script type="text/javascript" src="./scripts.js" async defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@shopify/draggable@1.0.0-beta.6/lib/draggable.bundle.js"></script>
   </body>
 </html>
