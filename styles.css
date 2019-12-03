@@ -74,13 +74,19 @@ body {
     transform: translate3d(0, 0, 0);
   }
   to {
-    transform: translate3d(-8em, 4em, 0);
+    transform: translate3d(0, 2em, 0);
     opacity: 0;
   }
 }
 
 @-webkit-keyframes strike {
-
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(0, 2em, 0);
+    opacity: 0;
+  }
 }
 
 @keyframes swim {
@@ -135,9 +141,6 @@ body {
 #bolt {
   cursor: pointer;
   transition: all 300ms;
-}
-
-#bolt:hover {
   color: rgb(211, 211, 0);
 }
 
@@ -147,6 +150,7 @@ body {
 
 #boltDirections {
   transition: all 300ms;
+  margin-bottom: .5rem;
 }
 
 #fireRing {
