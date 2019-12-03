@@ -76,3 +76,4 @@ function startFire(e) {
     .dataTransfer
     .clearData();
 }
+
