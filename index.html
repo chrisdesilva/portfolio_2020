@@ -19,9 +19,9 @@
       <main>
         <section class="banner__content">
             <h1>Hey. I'm Chris DeSilva.</h1>
-            <p id="boltDirections">Drag the bolt to the fire pit and help me light this fire. <i id="bolt" class="fas fa-bolt" draggable="true" ondragstart="grabBolt(event)"></i></p>
-            <i id="fire" class="fas fa-fire" draggable="true"></i>
-            <i id="fireRing" class="fas fa-crop-alt" ondragover="dragBolt(event)" ondrop="startFire(event)"></i>
+            <p id="boltDirections">Click the bolt to help me light this fire. <i id="bolt" class="fas fa-bolt"></i></p>
+            <i id="fire" class="fas fa-fire"></i>
+            <i id="fireRing" class="fas fa-crop-alt"></i>
         </section>
         <section class="bio">
           <p>I'm a developer, musician, and outdoors enthusiast currently based out of Austin, Texas. I love working on the front end, usually with React, and am comfortable diving into the back end with Node. Two crazy dogs serve as my rubber ducks.</p>
@@ -38,6 +38,10 @@
           <div class="tent" id="tent-4"></div>
           <div class="tent" id="tent-5"></div>
           <div class="tent" id="tent-6"></div>
+          <div class="tentFire">
+              <i id="tentFire" class="fas fa-fire"></i>
+              <i id="fireRing" class="fas fa-crop-alt"></i>
+          </div>
           <h2>Work</h2>
             <div class="experienceList">
                 <i class="fas fa-campground"></i>
@@ -90,7 +94,6 @@
         </div>
       </footer>
     </div>
-    <script src="http://bernardo-castilho.github.io/DragDropTouch/DragDropTouch.js"></script>
     <script type="text/javascript" src="./scripts.js" async defer></script>
   </body>
 </html>

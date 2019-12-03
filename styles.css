@@ -69,6 +69,20 @@ body {
   }
 }
 
+@keyframes strike {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-8em, 4em, 0);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes strike {
+
+}
+
 @keyframes swim {
   0% {
     transform: translate3d(50px, 40px, 0px);
@@ -127,6 +141,10 @@ body {
   color: rgb(211, 211, 0);
 }
 
+.strike {
+  animation: 500ms ease-in-out .5s 1 strike;
+}
+
 #boltDirections {
   transition: all 300ms;
 }
@@ -147,11 +165,21 @@ body {
   color: orange;
 }
 
+#tentFire {
+  cursor: pointer;
+  transform: scale(1);
+  margin-top: .5rem;
+  opacity: 1;
+  transition: all 300ms;
+  animation: 3000ms ease-in-out infinite grow;
+  color: orange;
+}
+
 .bio {
   padding: 8em 0;
   background: linear-gradient(#92c6cf, #5FA8D3);
-  -webkit-clip-path: polygon(75% 20%, 100% 0, 100% 100%, 0 100%, 0 0);
-  clip-path: polygon(75% 20%, 100% 0, 100% 100%, 0 100%, 0 0);
+  -webkit-clip-path: polygon(75% 10%, 100% 0, 100% 100%, 0 100%, 0 0);
+  clip-path: polygon(75% 10%, 100% 0, 100% 100%, 0 100%, 0 0);
   opacity: 0;
   transform: translateY(-5%);
   transition: all 300ms ease-in-out;
@@ -178,6 +206,7 @@ body {
   margin-top: 2rem;
   width: 25%;
   font-size: 2rem;
+  opacity: 1;
 }
 
 #shape--1 {
@@ -308,6 +337,15 @@ body {
   border-right: 3rem solid transparent;
 }
 
+.tentFire {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 16%;
+  right: 18%
+}
+
 .resume {
   margin-top: 2rem;
   font-family: 'Oswald', sans-serif;
@@ -337,6 +375,9 @@ footer {
 
 @media screen and (max-width: 700px) {
   .tent {
+    display: none;
+  }
+  .tentFire {
     display: none;
   }
 }
