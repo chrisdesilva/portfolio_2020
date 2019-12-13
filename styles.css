@@ -1,3 +1,19 @@
+@font-face {
+  font-family: 'Fountain free-Regular';
+  src: url('./Fountain free-Regular.ttf')
+  format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'grewmoon';
+  src: url('./grewmoon.ttf')
+  format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
 html {
   font-size: calc(1rem + 1vw);
   color: #2F1E2F;
@@ -6,7 +22,6 @@ html {
 body {
   margin: 0;
   background: #78C292;
-  font-family: 'Oswald', sans-serif;
 }
 
 @keyframes bounce {
@@ -352,7 +367,6 @@ body {
 
 .resume {
   margin-top: 2rem;
-  font-family: 'Oswald', sans-serif;
   padding: .25rem 1rem;
   font-size: 1rem;
   border-radius: 5px;
@@ -395,15 +409,15 @@ h3,
 h4,
 h5,
 h6 {
-  letter-spacing: -2px;
   margin-bottom: 0;
+  font-family: 'Fountain free-Regular', serif;
+  letter-spacing: 1px;
 }
 
 p {
-  letter-spacing: -.5px;
-  font-family: 'Oswald', sans-serif;
   margin-top: 0;
   display: inline-block;
+  font-family: 'Oswald', sans-serif;
 }
 
 .hide {
