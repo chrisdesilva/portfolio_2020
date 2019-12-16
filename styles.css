@@ -373,6 +373,7 @@ body {
   background: #f7f7f7;
   color: #2F1E2F;
   z-index: 10;
+  font-family: 'Fountain free-Regular', serif;
 }
 
 footer {
@@ -384,11 +385,19 @@ footer {
 }
 
 .contact {
-  margin-bottom: 1rem;;
+  margin-bottom: 1rem;
 }
 
 .contact a:not(:last-child) {
   margin-right: 2rem;
+}
+
+.contact a {
+  transition: color 300ms;
+}
+
+.contact a:hover {
+  color: #E13700
 }
 
 @media screen and (max-width: 700px) {
