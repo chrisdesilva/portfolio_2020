@@ -273,7 +273,8 @@ body {
   z-index: 10;
 }
 
-.experienceList p {
+.experienceList p,
+.experienceList a {
   margin-bottom: 0;
   margin-left: 0.5rem;
 }
@@ -420,7 +421,8 @@ h6 {
   letter-spacing: 1px;
 }
 
-p {
+p,
+a {
   margin-top: 0;
   display: inline-block;
   font-family: "Oswald", sans-serif;
